@@ -1,3 +1,12 @@
+# NBA-Dashboard Webapp 
+
+Find stats to every NBA player. 
+
+[Website on Netlify](https://comforting-brioche-3501de.netlify.app).
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
