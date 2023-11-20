@@ -8,7 +8,7 @@ const NBAPlayerSearch = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [playerStats, setPlayerStats] = useState(null);
-  const randomNumber = Math.floor(Math.random() * 2500) + 1;
+  const randomNumber = Math.floor(Math.random() * 450) + 1;
 
   useEffect(() => {
     if (searchTerm.trim() === "") {

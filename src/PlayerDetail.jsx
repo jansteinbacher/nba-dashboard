@@ -195,10 +195,10 @@ const PlayerDetail = () => {
         Click for the latest game stats &darr;
       </h3>
       {showStatsTable && (
-        <div className="container mx-auto mt-8 flex flex-nowrap">
-          <h1 className="text-2xl font-bold mb-4">Player Stats - Last Month</h1>
+        <div className="container mx-auto mt-8 overflow-x-auto">
+          <h1 className="text-2xl font-bold mb-4 text-center text-white">Player Stats - Last Month</h1>
 
-          <table className="table-auto">
+          <table className="min-w-full text-center text-white border-slate-500 bg-gradient-to-r from-slate-900 to-slate-800 rounded-lg">
             <thead>
               <tr>
                 <th className="px-4 py-2">Game Date</th>
