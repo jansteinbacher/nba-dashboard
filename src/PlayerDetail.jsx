@@ -28,7 +28,7 @@ const PlayerDetail = () => {
       <h1 className="text-3xl font-bold mb-4 text-center text-white">
         {playerDetails ? `${playerDetails.first_name} ${playerDetails.last_name}` : 'Loading...'}
       </h1>
-      <h3 className='text-xl mb-4 text-white hover:underline font-semibold'><a href='/'> Go back</a></h3>
+      <h3 className='text-xl mb-4 text-white hover:underline font-semibold'><a href='/'> Go back to Search</a></h3>
       {playerDetails ? (
         <div className="grid grid-cols-1 auto-rows-[170px] md:grid-cols-2 lg:grid-cols-8 gap-4">
           <div className="row-span-1 rounded-xl border-2 border-slate-500 bg-gradient-to-r from-slate-900 to-slate-800 p-4 lg:col-span-4">
