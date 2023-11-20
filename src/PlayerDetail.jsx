@@ -195,16 +195,21 @@ const PlayerDetail = () => {
         Click for the latest game stats &darr;
       </h3>
       {showStatsTable && (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto mt-8 flex flex-nowrap">
           <h1 className="text-2xl font-bold mb-4">Player Stats - Last Month</h1>
 
           <table className="table-auto">
             <thead>
               <tr>
                 <th className="px-4 py-2">Game Date</th>
+                <th className="px-4 py-2">Minutes</th>
                 <th className="px-4 py-2">Points</th>
+                <th className="px-4 py-2">FG</th>
+                <th className="px-4 py-2">3P</th>
                 <th className="px-4 py-2">Assists</th>
                 <th className="px-4 py-2">Rebounds</th>
+                <th className="px-4 py-2">Steels</th>
+                <th className="px-4 py-2">Blocks</th>
               </tr>
             </thead>
             <tbody>
@@ -216,9 +221,14 @@ const PlayerDetail = () => {
                     <td className="border px-4 py-2">
                       {game.game.date.split("T")[0]}
                     </td>
+                    <td className="border px-4 py-2">{game.min}</td>
                     <td className="border px-4 py-2">{game.pts}</td>
+                    <td className="border px-4 py-2">{game.fgm}-{game.fga}</td>
+                    <td className="border px-4 py-2">{game.fg3m}-{game.fg3a}</td>
                     <td className="border px-4 py-2">{game.ast}</td>
                     <td className="border px-4 py-2">{game.reb}</td>
+                    <td className="border px-4 py-2">{game.stl}</td>
+                    <td className="border px-4 py-2">{game.blk}</td>
                   </tr>
                 ))}
             </tbody>
